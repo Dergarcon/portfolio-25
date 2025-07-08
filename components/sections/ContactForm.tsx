@@ -27,14 +27,30 @@ export default function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    // Reset form
-    setFormData({ name: '', email: '', company: '', message: '' });
-    setIsSubmitting(false);
-
-    alert('Thank you! I will respond within 4 hours.');
+      if (response.ok) {
+        // Reset form
+        setFormData({ name: '', email: '', company: '', message: '' });
+        alert('Thank you! I will respond within 4 hours.');
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      alert(
+        'Sorry, there was an error sending your message. Please try again.'
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
