@@ -14,7 +14,7 @@ export default function Hero() {
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-background/80">
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
             I&apos;ve optimized Ethereum infrastructure
             <br />
             <span className="text-primary">saving companies $2M+</span>
@@ -22,7 +22,7 @@ export default function Hero() {
             in gas costs
           </h1>
 
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8">
             5 years building DeFi protocols managing{' '}
             <span className="font-semibold text-foreground">$50M+ TVL</span>
           </p>
@@ -42,7 +42,7 @@ export default function Hero() {
             See My Impact
           </Button>
 
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-primary mb-2">30%</div>
               <div className="text-sm text-muted-foreground">

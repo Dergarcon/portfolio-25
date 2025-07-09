@@ -129,7 +129,7 @@ export default function ProjectsShowcase() {
           <p className="text-muted-foreground mb-4">
             Ready to discuss how I can optimize your blockchain infrastructure?
           </p>
-          <div className="flex gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="px-6 py-3 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors">
               Schedule Technical Discussion
             </button>
