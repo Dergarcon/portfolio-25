@@ -12,7 +12,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
-import { Calendar, Clock, MapPin, Mail, Send } from 'lucide-react';
+import { Mail, Send } from 'lucide-react';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -67,84 +67,43 @@ export default function ContactForm() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
-            Let&apos;s Build Something Great
+            Open to Senior Solidity Opportunities
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Available for immediate start. Currently interviewing for senior
-            blockchain roles with competitive compensation expectations.
+            Seeking senior engineering roles focused on smart contracts, MEV
+            infrastructure, and DeFi protocol development. NOT interested in
+            frontend positions.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Information */}
           <div className="space-y-8">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Calendar className="h-5 w-5 text-primary" />
-                  Schedule Technical Discussion
-                </CardTitle>
-                <CardDescription>
-                  15-minute consultation to discuss your blockchain challenges
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button className="w-full" size="lg">
-                  Book Calendar Slot
-                </Button>
-              </CardContent>
-            </Card>
-
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="p-2 bg-primary/10 rounded-lg">
-                  <Clock className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-1">Response Time</h3>
-                  <p className="text-sm text-muted-foreground">
-                    I respond within 4 hours during business hours
-                  </p>
-                </div>
+            <div className="flex items-start gap-4">
+              <div className="p-2 bg-primary/10 rounded-lg">
+                <Mail className="h-5 w-5 text-primary" />
               </div>
-
-              <div className="flex items-start gap-4">
-                <div className="p-2 bg-primary/10 rounded-lg">
-                  <MapPin className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-1">Availability</h3>
-                  <p className="text-sm text-muted-foreground">
-                    9 AM - 6 PM CST (Nicaragua timezone aligns with US)
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="p-2 bg-primary/10 rounded-lg">
-                  <Mail className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-1">Email</h3>
-                  <p className="text-sm text-muted-foreground">
-                    contact@yourname.dev
-                  </p>
-                </div>
+              <div>
+                <h3 className="font-semibold mb-1">Email</h3>
+                <p className="text-sm text-muted-foreground">
+                  contact@yourname.dev
+                </p>
               </div>
             </div>
 
             <div className="p-6 bg-primary/5 rounded-lg border border-primary/20">
               <h3 className="font-semibold mb-3 flex items-center gap-2">
-                <Badge variant="secondary">Currently Available</Badge>
+                <Badge variant="secondary">Senior Solidity Engineer</Badge>
               </h3>
               <p className="text-sm text-muted-foreground mb-3">
-                Looking for senior blockchain engineering roles with:
+                Ideal opportunities include:
               </p>
               <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• $120K-180K compensation range</li>
-                <li>• Remote-first or hybrid opportunities</li>
-                <li>• Focus on DeFi/infrastructure projects</li>
-                <li>• Technical leadership responsibilities</li>
+                <li>• MEV infrastructure development</li>
+                <li>• Advanced Solidity & smart contracts</li>
+                <li>• DeFi protocol architecture</li>
+                <li>• Smart contract auditing</li>
+                <li>• Backend systems (NOT frontend)</li>
               </ul>
             </div>
           </div>
@@ -154,7 +113,7 @@ export default function ContactForm() {
             <CardHeader>
               <CardTitle>Send a Message</CardTitle>
               <CardDescription>
-                Tell me about your blockchain project or opportunity
+                Tell me about your MEV/DeFi project or Solidity engineering role
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -224,7 +183,7 @@ export default function ContactForm() {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    placeholder="Tell me about your blockchain project, technical challenges, or opportunity..."
+                    placeholder="Describe your MEV infrastructure needs, DeFi protocol requirements, or Solidity engineering role..."
                     rows={4}
                   />
                 </div>

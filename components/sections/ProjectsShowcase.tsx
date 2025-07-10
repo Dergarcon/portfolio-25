@@ -2,98 +2,104 @@ import ProjectCard from './ProjectCard';
 
 const projects = [
   {
-    title: 'Custom Geth Fork Implementation',
+    title: 'MEV Searcher Infrastructure',
     description:
-      'Optimized Ethereum client with custom consensus mechanisms and performance improvements for enterprise blockchain infrastructure.',
+      'Production MEV bot supporting 1600+ tokens across 10+ major DeFi protocols (Uniswap, Compound, Aave, Curve, SushiSwap). Features multi-strategy execution, time machine debugging with archive nodes, and managed multisig wallet operations with production private key security.',
     businessImpact:
-      'Reduced node sync time by 30%, saving $500K annually in infrastructure costs',
+      '1600+ tokens supported across 10+ major DeFi protocols with private order flow',
     metrics: [
-      { label: 'Sync Speed', value: '30%', trend: 'up' as const },
-      { label: 'Cost Savings', value: '$500K', trend: 'up' as const },
-      { label: 'Uptime', value: '99.9%', trend: 'up' as const },
-      { label: 'Nodes', value: '50+', trend: 'up' as const },
+      { label: 'Tokens', value: '1600+', trend: 'up' as const },
+      { label: 'Protocols', value: '10+', trend: 'up' as const },
+      { label: 'Strategies', value: 'Multi', trend: 'up' as const },
+      { label: 'Order Flow', value: 'Private', trend: 'up' as const },
+    ],
+    technologies: [
+      'Solidity',
+      'Python',
+      'Cython',
+      'Diamond Proxy',
+      'Assembly',
+      'Archive Nodes',
+      'MEVBlocker',
+      'Datadog',
+      'Redis',
+      'EC2',
+    ],
+    liveDemo: '',
+    githubUrl: '',
+    featured: true,
+  },
+  {
+    title: 'Custom Geth Fork (Open Source)',
+    description:
+      'Custom Ethereum client achieving 30% performance improvement and 0.5s block discovery advantage over Infura Premium nodes. Optimized for MEV operations with intelligent block data delivery, bytecode manipulation, and advanced bundle simulation features.',
+    businessImpact:
+      '30% faster bundle simulation with pre-computed MEV data delivery and bytecode manipulation on each new block',
+    metrics: [
+      { label: 'Bundle Simulation', value: '30% faster', trend: 'up' as const },
+      { label: 'Block Advantage', value: '0.5s', trend: 'up' as const },
+      { label: 'API Calls', value: 'Zero', trend: 'up' as const },
+      { label: 'Data Delivery', value: 'Pre-computed', trend: 'up' as const },
     ],
     technologies: [
       'Go',
-      'Ethereum',
       'Geth',
-      'Docker',
-      'Kubernetes',
-      'Prometheus',
+      'Ethereum',
+      'Bundle Simulation',
+      'Bytecode Manipulation',
+      'eth-docker',
+      'AWS',
     ],
-    liveDemo: 'https://etherscan.io/address/0x...',
-    githubUrl: 'https://github.com/your-username/custom-geth-fork',
+    liveDemo: '',
+    githubUrl: 'https://github.com/Dergarcon/geth',
     featured: true,
   },
   {
-    title: 'DeFi Yield Optimization Protocol',
+    title: '0x-Inspired Trading Protocol',
     description:
-      'Automated yield farming protocol with smart contract vaults managing multi-strategy yield optimization across DeFi protocols.',
+      'Co-created custom trading protocol implementing advanced Solidity patterns (Diamond Proxy, Assembly, Gas Optimizations) with offline orderbook and searcher-based execution system for optimized order fulfillment.',
     businessImpact:
-      '$15M TVL managed with zero security incidents over 18 months',
+      'Offline orderbook with searcher backrunning for automated profit optimization',
     metrics: [
-      { label: 'TVL Managed', value: '$15M', trend: 'up' as const },
-      { label: 'APY Average', value: '12.5%', trend: 'up' as const },
-      { label: 'Security Score', value: '100%', trend: 'up' as const },
-      { label: 'Strategies', value: '8', trend: 'up' as const },
+      { label: 'Order Type', value: 'Offline', trend: 'up' as const },
+      { label: 'Execution', value: 'Searcher', trend: 'up' as const },
+      { label: 'Simulation', value: 'No-sig', trend: 'up' as const },
+      { label: 'Testing', value: 'Integrated', trend: 'up' as const },
     ],
     technologies: [
       'Solidity',
-      'Hardhat',
-      'Chainlink',
-      'Compound',
-      'Aave',
-      'Uniswap V3',
+      '0x Protocol',
+      'Order Matching',
+      'MEV Integration',
+      'Testing Suite',
     ],
-    liveDemo: 'https://app.yourprotocol.com',
-    githubUrl: 'https://github.com/your-username/defi-yield-protocol',
+    liveDemo: '',
+    githubUrl: '',
     featured: true,
   },
   {
-    title: 'Gas Optimization Suite',
+    title: 'On-Chain Analytics & Monitoring Suite',
     description:
-      'Smart contract gas optimization tools and libraries that reduce deployment and transaction costs by analyzing bytecode patterns.',
+      'Built comprehensive on-chain analytics and monitoring suite with Datadog integration for MEV operations, profit tracking, and competitive analysis. Includes real-time monitoring of all major DeFi protocols and competitor strategies.',
     businessImpact:
-      'Reduced gas costs by 40% for client transactions, saving $200K monthly',
+      'Real-time profit tracking with competitor analysis for production MEV operations',
     metrics: [
-      { label: 'Gas Reduction', value: '40%', trend: 'up' as const },
-      { label: 'Monthly Savings', value: '$200K', trend: 'up' as const },
-      { label: 'Contracts Optimized', value: '150+', trend: 'up' as const },
-      { label: 'Clients', value: '12', trend: 'up' as const },
+      { label: 'Monitoring', value: 'Real-time', trend: 'up' as const },
+      { label: 'Analysis', value: 'Competitive', trend: 'up' as const },
+      { label: 'Infrastructure', value: 'AWS', trend: 'up' as const },
+      { label: 'Uptime', value: 'High', trend: 'up' as const },
     ],
     technologies: [
-      'Solidity',
-      'Assembly',
-      'Foundry',
-      'Slither',
-      'Mythril',
-      'TypeScript',
+      'Python',
+      'Event Monitoring',
+      'State Reading',
+      'AWS',
+      'Node Infrastructure',
+      'Analytics',
     ],
-    liveDemo: 'https://gas-optimizer.dev',
-    githubUrl: 'https://github.com/your-username/gas-optimization-suite',
-  },
-  {
-    title: 'Multi-Chain Bridge Infrastructure',
-    description:
-      'Secure cross-chain bridge enabling asset transfers between Ethereum, Polygon, and Arbitrum with automated liquidity management.',
-    businessImpact:
-      'Processed $50M in cross-chain transactions with 99.99% uptime',
-    metrics: [
-      { label: 'Volume', value: '$50M', trend: 'up' as const },
-      { label: 'Uptime', value: '99.99%', trend: 'up' as const },
-      { label: 'Chains', value: '3', trend: 'up' as const },
-      { label: 'Avg Fee', value: '0.1%', trend: 'down' as const },
-    ],
-    technologies: [
-      'Solidity',
-      'Node.js',
-      'Redis',
-      'PostgreSQL',
-      'Web3.py',
-      'Ethers.js',
-    ],
-    liveDemo: 'https://bridge.yourprotocol.com',
-    githubUrl: 'https://github.com/your-username/multichain-bridge',
+    liveDemo: '',
+    githubUrl: '',
+    featured: true,
   },
 ];
 
@@ -102,10 +108,12 @@ export default function ProjectsShowcase() {
     <section id="projects" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
+          <h2 className="text-4xl font-bold mb-4">
+            MEV Infrastructure & DeFi Projects
+          </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Production-ready blockchain solutions with proven business impact
-            and quantified results
+            Production MEV systems and advanced Solidity implementations from 5
+            years at SMG, acquired by ConsenSys in 2023
           </p>
         </div>
 
@@ -127,14 +135,15 @@ export default function ProjectsShowcase() {
 
         <div className="text-center mt-16">
           <p className="text-muted-foreground mb-4">
-            Ready to discuss how I can optimize your blockchain infrastructure?
+            Looking for a senior Solidity engineer with deep MEV and DeFi
+            expertise?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="px-6 py-3 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors">
-              Schedule Technical Discussion
+              Discuss MEV/DeFi Opportunities
             </button>
             <button className="px-6 py-3 border border-border rounded-full hover:bg-muted transition-colors">
-              View All Projects
+              View GitHub Projects
             </button>
           </div>
         </div>

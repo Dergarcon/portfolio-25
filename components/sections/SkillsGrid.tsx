@@ -10,94 +10,97 @@ import { Code, Database, Shield, Zap, Network, Globe } from 'lucide-react';
 
 const skillCategories = [
   {
-    title: 'Blockchain Protocols',
-    icon: Network,
-    description: 'Core blockchain development and protocol optimization',
-    skills: [
-      'Ethereum',
-      'Custom Geth Forks',
-      'Layer 2 Solutions',
-      'Polygon',
-      'Arbitrum',
-      'Optimism',
-      'Consensus Mechanisms',
-      'EVM Optimization',
-    ],
-  },
-  {
-    title: 'Smart Contract Development',
+    title: 'Advanced Solidity Development',
     icon: Code,
-    description: 'Production-ready smart contracts with security focus',
+    description: 'Expert-level smart contract patterns and optimizations',
     skills: [
-      'Solidity',
-      'Vyper',
-      'Assembly',
-      'Hardhat',
-      'Foundry',
-      'Remix',
-      'OpenZeppelin',
-      'Upgradeable Contracts',
+      'Diamond Proxy Pattern',
+      'Assembly Integration',
+      'Gas Optimization',
+      'Auditing',
+      'Reverse Engineering',
+      'Multi-contract Systems',
+      'Shared Storage Patterns',
+      'Custom Order Execution',
     ],
   },
   {
-    title: 'DeFi Protocols',
+    title: 'MEV Infrastructure',
+    icon: Network,
+    description: 'Production MEV systems and custom client development',
+    skills: [
+      'Ethereum Client Development',
+      'Transaction Simulation',
+      'Order Flow Optimization',
+      'Mempool Analysis',
+      'Arbitrage Systems',
+      'Liquidation Infrastructure',
+      'Flash Loan Integration',
+      'Production Trading Systems',
+    ],
+  },
+  {
+    title: 'DeFi Protocol Integration',
     icon: Zap,
-    description: 'Deep expertise in decentralized finance ecosystems',
+    description: 'Deep integration with major DeFi protocols',
     skills: [
       'Uniswap V2/V3',
       'Compound',
       'Aave',
       'Curve',
-      'Balancer',
-      'Yield Farming',
-      'Liquidity Mining',
-      'AMM Design',
+      'SushiSwap',
+      'Balancer V2',
+      '1inch',
+      'PancakeSwap V3',
+      'DefiSwap',
+      'SakeSwap',
+      'ShibaSwap',
+      '0x Protocol',
     ],
   },
   {
-    title: 'Infrastructure & DevOps',
+    title: 'Backend & Performance',
     icon: Database,
-    description: 'Scalable blockchain infrastructure and monitoring',
+    description: 'High-performance systems for blockchain operations',
     skills: [
-      'Node.js',
-      'Go',
       'Python',
-      'Docker',
-      'Kubernetes',
-      'Prometheus',
-      'Grafana',
-      'Redis',
-      'PostgreSQL',
+      'Cython',
+      'Go',
+      'Hardhat',
+      'Foundry',
+      'Node Infrastructure',
+      'Event Monitoring',
+      'Performance Tuning',
     ],
   },
   {
-    title: 'Security & Auditing',
+    title: 'On-Chain Analytics',
     icon: Shield,
-    description: 'Smart contract security and formal verification',
+    description: 'Real-time monitoring and competitive analysis',
     skills: [
-      'Slither',
-      'Mythril',
-      'Echidna',
-      'Formal Verification',
-      'Audit Reports',
-      'Penetration Testing',
-      'Code Review',
-      'Risk Assessment',
+      'Profit Tracking',
+      'Competitor Analysis',
+      'Transaction Analysis',
+      'Event Processing',
+      'MEV Analytics',
+      'Performance Metrics',
+      'Infrastructure Monitoring',
+      'Data Pipelines',
     ],
   },
   {
-    title: 'Web3 Development',
+    title: 'Strategy Development',
     icon: Globe,
-    description: 'Full-stack Web3 applications and integrations',
+    description: 'Multi-strategy MEV and trading systems',
     skills: [
-      'Web3.js',
-      'Ethers.js',
-      'Wagmi',
-      'RainbowKit',
-      'IPFS',
-      'TheGraph',
-      'Chainlink',
-      'Metamask Integration',
+      'Arbitrage Strategies',
+      'Liquidation Bots',
+      'Backrunning Mints',
+      'Order Matching',
+      'Offline Orderbooks',
+      'Token Support (1600+)',
+      'Strategy Testing',
+      'Profit Optimization',
     ],
   },
 ];
@@ -109,8 +112,9 @@ export default function SkillsGrid() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Technical Expertise</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            5+ years of hands-on experience with cutting-edge blockchain
-            technologies and production-ready DeFi solutions
+            5 years specializing in MEV infrastructure and advanced Solidity
+            development at SMG (acquired by ConsenSys), with deep expertise in
+            DeFi protocol integration
           </p>
         </div>
 
@@ -153,32 +157,32 @@ export default function SkillsGrid() {
         {/* Experience Summary */}
         <div className="mt-16 text-center">
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold mb-8">Experience Highlights</h3>
+            <h3 className="text-2xl font-bold mb-8">MEV & DeFi Experience</h3>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <div className="p-6 bg-muted/50 rounded-lg">
-                <div className="text-2xl font-bold text-primary mb-2">5+</div>
+                <div className="text-2xl font-bold text-primary mb-2">5</div>
                 <div className="text-sm text-muted-foreground">
-                  Years DeFi Experience
-                </div>
-              </div>
-              <div className="p-6 bg-muted/50 rounded-lg">
-                <div className="text-2xl font-bold text-primary mb-2">150+</div>
-                <div className="text-sm text-muted-foreground">
-                  Smart Contracts Deployed
+                  Years at SMG
                 </div>
               </div>
               <div className="p-6 bg-muted/50 rounded-lg">
                 <div className="text-2xl font-bold text-primary mb-2">
-                  $65M+
+                  1600+
                 </div>
                 <div className="text-sm text-muted-foreground">
-                  Total Value Secured
+                  Tokens Integrated
                 </div>
               </div>
               <div className="p-6 bg-muted/50 rounded-lg">
-                <div className="text-2xl font-bold text-primary mb-2">Zero</div>
+                <div className="text-2xl font-bold text-primary mb-2">10+</div>
                 <div className="text-sm text-muted-foreground">
-                  Critical Vulnerabilities
+                  DeFi Protocols
+                </div>
+              </div>
+              <div className="p-6 bg-muted/50 rounded-lg">
+                <div className="text-2xl font-bold text-primary mb-2">0.5s</div>
+                <div className="text-sm text-muted-foreground">
+                  Block Advantage
                 </div>
               </div>
             </div>
