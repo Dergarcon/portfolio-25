@@ -7,7 +7,7 @@ import {
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { ExternalLink, Github, TrendingUp } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 
 interface ProjectMetric {
   label: string;
@@ -31,7 +31,6 @@ export default function ProjectCard({
   title,
   description,
   businessImpact,
-  metrics,
   technologies,
   liveDemo,
   githubUrl,
@@ -61,21 +60,6 @@ export default function ProjectCard({
       </CardHeader>
 
       <CardContent className="space-y-6">
-        {/* Metrics */}
-        <div className="grid grid-cols-2 gap-4">
-          {metrics.map((metric, index) => (
-            <div key={index} className="text-center p-3 bg-muted/50 rounded-lg">
-              <div className="flex items-center justify-center gap-1 text-lg font-bold text-primary">
-                {metric.value}
-                {metric.trend === 'up' && <TrendingUp className="h-4 w-4" />}
-              </div>
-              <div className="text-xs text-muted-foreground mt-1">
-                {metric.label}
-              </div>
-            </div>
-          ))}
-        </div>
-
         {/* Technologies */}
         <div>
           <h4 className="text-sm font-medium mb-2">Technologies</h4>

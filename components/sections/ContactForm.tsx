@@ -85,9 +85,12 @@ export default function ContactForm() {
               </div>
               <div>
                 <h3 className="font-semibold mb-1">Email</h3>
-                <p className="text-sm text-muted-foreground">
-                  contact@yourname.dev
-                </p>
+                <a
+                  href="mailto:nick.roman.marek@gmail.com"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  nick.roman.marek@gmail.com
+                </a>
               </div>
             </div>
 

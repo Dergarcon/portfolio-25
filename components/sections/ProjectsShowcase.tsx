@@ -2,11 +2,11 @@ import ProjectCard from './ProjectCard';
 
 const projects = [
   {
-    title: 'MEV Searcher Infrastructure',
+    title: 'MEV Searcher',
     description:
-      'Production MEV bot supporting 1600+ tokens across 10+ major DeFi protocols (Uniswap, Compound, Aave, Curve, SushiSwap). Features multi-strategy execution, time machine debugging with archive nodes, and managed multisig wallet operations with production private key security.',
+      'Production MEV bot specialized in atomic arbitrage, only executing transactions with guaranteed profit. The searcher supports 1600+ tokens across 10+ major DeFi protocols including Uniswap, Compound, Aave, Curve, and SushiSwap. The bot uses advanced arbitrage strategies like smart routing and bundle backrunning. The system leverages advanced Solidity techniques like Diamond Proxy Pattern, inline Assembly, and Gas Optimizations. The searcher can trade using its own funds for maximum gas efficiency or leverage flash loans and UniswapV3 flash swaps for larger opportunities. The bot includes its own price oracle allowing profit extraction in any arbitrary token. The searcher features time machine debugging using archive nodes.',
     businessImpact:
-      '1600+ tokens supported across 10+ major DeFi protocols with private order flow',
+      'Atomic arbitrage bot with guaranteed profit execution and custom price oracle across 1600+ tokens',
     metrics: [
       { label: 'Tokens', value: '1600+', trend: 'up' as const },
       { label: 'Protocols', value: '10+', trend: 'up' as const },
@@ -17,17 +17,15 @@ const projects = [
       'Solidity',
       'Python',
       'Cython',
-      'Diamond Proxy',
       'Assembly',
-      'Archive Nodes',
-      'MEVBlocker',
+      'Managed Redis',
       'Datadog',
-      'Redis',
-      'EC2',
+      'AWS EC2',
+      'MEVBlocker',
     ],
     liveDemo: '',
     githubUrl: '',
-    featured: true,
+    featured: false,
   },
   {
     title: 'Custom Geth Fork (Open Source)',
@@ -52,12 +50,12 @@ const projects = [
     ],
     liveDemo: '',
     githubUrl: 'https://github.com/Dergarcon/geth',
-    featured: true,
+    featured: false,
   },
   {
     title: '0x-Inspired Trading Protocol',
     description:
-      'Co-created custom trading protocol implementing advanced Solidity patterns (Diamond Proxy, Assembly, Gas Optimizations) with offline orderbook and searcher-based execution system for optimized order fulfillment.',
+      'Co-created custom trading protocol with offline orderbook and searcher-based execution system. Contributed to auditing, gas optimization, testing and debugging while designing and developing the architecture. Integrated it into our MEV searcher for deep testing and used in live demos.',
     businessImpact:
       'Offline orderbook with searcher backrunning for automated profit optimization',
     metrics: [
@@ -75,7 +73,7 @@ const projects = [
     ],
     liveDemo: '',
     githubUrl: '',
-    featured: true,
+    featured: false,
   },
   {
     title: 'On-Chain Analytics & Monitoring Suite',
@@ -99,7 +97,7 @@ const projects = [
     ],
     liveDemo: '',
     githubUrl: '',
-    featured: true,
+    featured: false,
   },
 ];
 

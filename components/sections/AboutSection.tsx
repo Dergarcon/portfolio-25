@@ -64,8 +64,9 @@ export default function AboutSection() {
                   MEV searcher asset allocation and portfolio optimization,
                   integrated with exclusive order flow sources like MEVBlocker
                   and MetaMask Smart Transactions, and maintained our
-                  infrastructure on AWS EC2 instances. I also participated in
-                  smart contract auditing processes with external auditors, and
+                  infrastructure on AWS EC2 instances. I also managed team
+                  multisig wallets for asset management, participated in smart
+                  contract auditing processes with external auditors, and
                   developed comprehensive monitoring systems by combining
                   on-chain data and events with Datadog. My work spanned from
                   low-level blockchain optimizations to high-level trading
