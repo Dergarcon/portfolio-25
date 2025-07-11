@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Senior Solidity Engineer | MEV Infrastructure & DeFi Specialist',
+  title: 'Nick Marek | Senior Solidity Engineer',
   description:
     '5 years of MEV/DeFi infrastructure experience at SMG (acquired by ConsenSys). Expert in advanced Solidity, custom Geth forks, and DeFi protocol integration. 1600+ tokens, 10+ protocols supported.',
   keywords:
