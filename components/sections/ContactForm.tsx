@@ -149,7 +149,7 @@ export default function ContactForm() {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    placeholder="Describe your MEV infrastructure needs, DeFi protocol requirements, or Solidity engineering role..."
+                    placeholder="I'd love to hear about your project and how I can help. What's the role and what are you building?"
                     rows={8}
                   />
                 </div>
