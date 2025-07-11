@@ -63,7 +63,7 @@ export default function TeamworkSection() {
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
             Beyond technical execution, I believe great blockchain solutions
-            emerge from effective collaboration across diverse teams and
+            emerge from effective collaboration with cross-functional teams and
             stakeholders.
           </p>
         </div>
@@ -72,7 +72,10 @@ export default function TeamworkSection() {
           {teamworkAspects.map((aspect, index) => {
             const Icon = aspect.icon;
             return (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+              <Card
+                key={index}
+                className="hover:shadow-lg transition-shadow duration-300"
+              >
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3">
                     <Icon className="h-6 w-6 text-blue-600" />

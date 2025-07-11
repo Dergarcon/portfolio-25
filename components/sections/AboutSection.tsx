@@ -21,7 +21,7 @@ export default function AboutSection() {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Card className="mb-8">
+          <Card className="mb-8 transition-shadow duration-300 hover:shadow-lg">
             <CardHeader>
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 <div className="flex-shrink-0">
@@ -102,7 +102,7 @@ export default function AboutSection() {
             </CardContent>
           </Card>
 
-          <Card className="mb-8">
+          <Card className="mb-8 transition-shadow duration-300 hover:shadow-lg">
             <CardHeader>
               <CardTitle className="flex items-center gap-3">
                 <Badge
@@ -122,21 +122,21 @@ export default function AboutSection() {
           </Card>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div className="text-center p-6 bg-muted/30 rounded-lg">
+            <div className="text-center p-6 bg-muted/30 rounded-lg transition-shadow duration-300 hover:shadow-md">
               <div className="text-2xl font-bold text-primary mb-2">2020</div>
               <div className="text-muted-foreground">
                 B.Sc. Business Informatics
               </div>
             </div>
-            <div className="text-center p-6 bg-muted/30 rounded-lg">
+            <div className="text-center p-6 bg-muted/30 rounded-lg transition-shadow duration-300 hover:shadow-md">
               <div className="text-2xl font-bold text-primary mb-2">2020</div>
               <div className="text-muted-foreground">Joined SMG</div>
             </div>
-            <div className="text-center p-6 bg-muted/30 rounded-lg">
+            <div className="text-center p-6 bg-muted/30 rounded-lg transition-shadow duration-300 hover:shadow-md">
               <div className="text-2xl font-bold text-primary mb-2">2023</div>
               <div className="text-muted-foreground">ConsenSys Acquisition</div>
             </div>
-            <div className="text-center p-6 bg-muted/30 rounded-lg">
+            <div className="text-center p-6 bg-muted/30 rounded-lg transition-shadow duration-300 hover:shadow-md">
               <div className="text-2xl font-bold text-primary mb-2">2025</div>
               <div className="text-muted-foreground">
                 Open to New Opportunities

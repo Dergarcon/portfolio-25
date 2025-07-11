@@ -38,7 +38,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <Card
-      className={`h-full transition-all duration-300 hover:shadow-lg hover:scale-105 ${featured ? 'border-primary/50 bg-primary/5' : ''}`}
+      className={`h-full transition-shadow duration-300 hover:shadow-lg ${featured ? 'border-primary/50 bg-primary/5' : ''}`}
     >
       <CardHeader>
         <div className="flex items-start justify-between">

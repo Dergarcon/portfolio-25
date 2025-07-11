@@ -32,31 +32,10 @@ export default function Hero() {
           <Button
             onClick={scrollToBackground}
             size="lg"
-            className="text-lg px-8 py-6 rounded-full hover:scale-105 transition-transform"
+            className="text-lg px-8 py-6 rounded-full"
           >
             See My Background
           </Button>
-
-          <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">30%</div>
-              <div className="text-sm text-muted-foreground">
-                Faster Bundle Simulation
-              </div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">1600+</div>
-              <div className="text-sm text-muted-foreground">
-                Tokens Supported
-              </div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">10+</div>
-              <div className="text-sm text-muted-foreground">
-                DeFi Protocols
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

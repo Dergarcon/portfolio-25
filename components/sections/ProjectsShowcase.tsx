@@ -130,21 +130,6 @@ export default function ProjectsShowcase() {
             />
           ))}
         </div>
-
-        <div className="text-center mt-16">
-          <p className="text-muted-foreground mb-4">
-            Looking for a senior Solidity engineer with deep MEV and DeFi
-            expertise?
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-6 py-3 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors">
-              Discuss MEV/DeFi Opportunities
-            </button>
-            <button className="px-6 py-3 border border-border rounded-full hover:bg-muted transition-colors">
-              View GitHub Projects
-            </button>
-          </div>
-        </div>
       </div>
     </section>
   );

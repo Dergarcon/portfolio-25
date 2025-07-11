@@ -11,7 +11,6 @@ import {
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Badge } from '@/components/ui/badge';
 import { Mail, Send } from 'lucide-react';
 
 export default function ContactForm() {
@@ -39,7 +38,7 @@ export default function ContactForm() {
       if (response.ok) {
         // Reset form
         setFormData({ name: '', email: '', company: '', message: '' });
-        alert('Thank you! I will respond within 4 hours.');
+        alert('Thank you! I will contact you shortly.');
       } else {
         throw new Error('Failed to send message');
       }
@@ -70,49 +69,13 @@ export default function ContactForm() {
             Open to Senior Solidity Opportunities
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Seeking senior engineering roles focused on smart contracts, MEV
-            infrastructure, and DeFi protocol development. NOT interested in
-            frontend positions.
+            Seeking senior Solidity and backend engineering roles.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <div className="flex items-start gap-4">
-              <div className="p-2 bg-primary/10 rounded-lg">
-                <Mail className="h-5 w-5 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-semibold mb-1">Email</h3>
-                <a
-                  href="mailto:nick.roman.marek@gmail.com"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  nick.roman.marek@gmail.com
-                </a>
-              </div>
-            </div>
-
-            <div className="p-6 bg-primary/5 rounded-lg border border-primary/20">
-              <h3 className="font-semibold mb-3 flex items-center gap-2">
-                <Badge variant="secondary">Senior Solidity Engineer</Badge>
-              </h3>
-              <p className="text-sm text-muted-foreground mb-3">
-                Ideal opportunities include:
-              </p>
-              <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• MEV infrastructure development</li>
-                <li>• Advanced Solidity & smart contracts</li>
-                <li>• DeFi protocol architecture</li>
-                <li>• Smart contract auditing</li>
-                <li>• Backend systems (NOT frontend)</li>
-              </ul>
-            </div>
-          </div>
-
+        <div className="max-w-2xl mx-auto">
           {/* Contact Form */}
-          <Card>
+          <Card className="transition-shadow duration-300 hover:shadow-lg mb-8">
             <CardHeader>
               <CardTitle>Send a Message</CardTitle>
               <CardDescription>
@@ -187,7 +150,7 @@ export default function ContactForm() {
                     onChange={handleChange}
                     required
                     placeholder="Describe your MEV infrastructure needs, DeFi protocol requirements, or Solidity engineering role..."
-                    rows={4}
+                    rows={8}
                   />
                 </div>
 
@@ -209,6 +172,24 @@ export default function ContactForm() {
               </form>
             </CardContent>
           </Card>
+
+          {/* Contact Information */}
+          <div className="flex justify-center">
+            <div className="flex items-start gap-4">
+              <div className="p-2 bg-primary/10 rounded-lg">
+                <Mail className="h-5 w-5 text-primary" />
+              </div>
+              <div>
+                <h3 className="font-semibold mb-1">Email</h3>
+                <a
+                  href="mailto:nick.roman.marek@gmail.com"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  nick.roman.marek@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

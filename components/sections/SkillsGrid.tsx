@@ -31,7 +31,8 @@ const skillCategories = [
     skills: [
       'Ethereum Client Development',
       'Transaction Simulation',
-      'Order Flow Optimization',
+      'Bundle Simulation',
+      'Order Flow Value Extraction',
       'Mempool Analysis',
       'Arbitrage Systems',
       'Liquidation Infrastructure',
@@ -71,6 +72,8 @@ const skillCategories = [
       'Node Infrastructure',
       'Event Monitoring',
       'Performance Tuning',
+      'Intelligent Caching Mechanisms',
+      'Event Driven Architecture',
     ],
   },
   {
@@ -86,6 +89,7 @@ const skillCategories = [
       'Performance Metrics',
       'Infrastructure Monitoring',
       'Data Pipelines',
+      'Automatic Report Generation',
     ],
   },
   {
@@ -95,12 +99,11 @@ const skillCategories = [
     skills: [
       'Arbitrage Strategies',
       'Liquidation Bots',
-      'Backrunning Mints',
-      'Order Matching',
+      'Order Batching',
       'Offline Orderbooks',
-      'Token Support (1600+)',
       'Strategy Testing',
       'Profit Optimization',
+      'Automation',
     ],
   },
 ];
@@ -110,7 +113,7 @@ export default function SkillsGrid() {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Technical Expertise</h2>
+          <h2 className="text-4xl font-bold mb-4">Technical Skills</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             5 years specializing in MEV infrastructure and advanced Solidity
             development at SMG (acquired by ConsenSys), with deep expertise in

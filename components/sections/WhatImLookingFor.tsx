@@ -10,7 +10,7 @@ export default function WhatImLookingFor() {
             What I&apos;m Looking For
           </h2>
 
-          <Card className="p-8">
+          <Card className="p-8 transition-shadow duration-300 hover:shadow-lg">
             <CardContent className="prose prose-lg dark:prose-invert max-w-none">
               <p className="text-lg leading-relaxed mb-6">
                 I&apos;m selective about opportunities that align with my

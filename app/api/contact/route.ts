@@ -54,8 +54,57 @@ Sent from your portfolio contact form
       `,
     };
 
-    // Send email
+    // Send email to you
     await transporter.sendMail(mailOptions);
+
+    // Send confirmation email to sender
+    const confirmationMailOptions = {
+      from: process.env.SMTP_USER,
+      to: email,
+      subject: 'Confirmation: Your message to Nick Marek',
+      text: `
+Hi ${name},
+
+Thank you for reaching out! This email confirms that I've received your message.
+
+Here's a copy of what you sent:
+
+Message:
+${message}
+
+I'll contact you shortly.
+
+Best regards,
+Nick Marek
+Senior MEV Engineer
+
+--
+This is an automated confirmation email. Please do not reply to this address.
+      `,
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <h2 style="color: #333;">Message Received!</h2>
+          <p>Hi ${name},</p>
+          <p>Thank you for reaching out! This email confirms that I've received your message.</p>
+          
+          <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3 style="margin-top: 0;">Your Message:</h3>
+            <p style="white-space: pre-wrap;">${message}</p>
+          </div>
+          
+          <p>I'll contact you shortly.</p>
+          
+          <p>Best regards,<br>
+          <strong>Nick Marek</strong><br>
+          Senior MEV Engineer</p>
+          
+          <hr style="border: none; border-top: 1px solid #ddd; margin: 30px 0;">
+          <p style="color: #666; font-size: 12px;">This is an automated confirmation email. Please do not reply to this address.</p>
+        </div>
+      `,
+    };
+
+    await transporter.sendMail(confirmationMailOptions);
 
     return NextResponse.json({ success: true }, { status: 200 });
   } catch (error) {

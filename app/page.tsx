@@ -3,7 +3,6 @@ import AboutSection from '@/components/sections/AboutSection';
 import ProjectsShowcase from '@/components/sections/ProjectsShowcase';
 import WhatImLookingFor from '@/components/sections/WhatImLookingFor';
 import TeamworkSection from '@/components/sections/TeamworkSection';
-import SkillsGrid from '@/components/sections/SkillsGrid';
 import ContactForm from '@/components/sections/ContactForm';
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
       <ProjectsShowcase />
       <WhatImLookingFor />
       <TeamworkSection />
-      <SkillsGrid />
       <ContactForm />
     </main>
   );
