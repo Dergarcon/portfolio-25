@@ -1,14 +1,10 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
+import { useSmoothScroll } from '@/hooks/useSmoothScroll';
 
 export default function Hero() {
-  const scrollToBackground = () => {
-    const backgroundSection = document.getElementById('background');
-    if (backgroundSection) {
-      backgroundSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const { scrollToElement } = useSmoothScroll();
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-background/80">
@@ -30,7 +26,7 @@ export default function Hero() {
           </div>
 
           <Button
-            onClick={scrollToBackground}
+            onClick={() => scrollToElement('about')}
             size="lg"
             className="text-lg px-8 py-6 rounded-full"
           >
