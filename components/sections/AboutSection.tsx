@@ -1,4 +1,5 @@
 import { Badge } from '@/components/ui/badge';
+import Image from 'next/image';
 import {
   Card,
   CardContent,
@@ -25,9 +26,11 @@ export default function AboutSection() {
             <CardHeader>
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 <div className="flex-shrink-0">
-                  <img
+                  <Image
                     src="/profile-correct-head.jpg"
                     alt="Professional headshot"
+                    width={160}
+                    height={160}
                     className="w-40 h-40 rounded-lg object-cover object-center border-2 border-primary/20"
                   />
                 </div>
