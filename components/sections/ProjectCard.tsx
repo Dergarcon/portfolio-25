@@ -17,7 +17,7 @@ interface ProjectMetric {
 
 interface ProjectCardProps {
   title: string;
-  description: string;
+  description: string | React.ReactNode;
   businessImpact: string;
   metrics: ProjectMetric[];
   technologies: string[];

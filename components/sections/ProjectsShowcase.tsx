@@ -77,23 +77,41 @@ const projects = [
   },
   {
     title: 'On-Chain Analytics & Monitoring Suite',
-    description:
-      'Built comprehensive on-chain analytics and monitoring suite with Datadog integration for MEV operations, profit tracking, and competitive analysis. Includes real-time monitoring of all major DeFi protocols and competitor strategies.',
+    description: (
+      <>
+        Built comprehensive on-chain analytics platform that eliminated hours of
+        manual transaction analysis via Etherscan. The system automatically
+        tracks on-chain events, sends real-time alerts for important activities,
+        and stores all data in a PostgreSQL database for historical analysis.
+        This automation enabled instant access to live reports and dashboards,
+        replacing tedious manual workflows with automated insights that update
+        continuously throughout the day.
+        <br />
+        <br />
+        For production infrastructure, I implemented full-stack monitoring using
+        Datadog across all staging and production servers. The monitoring suite
+        tracks server health metrics, filters application logs for critical
+        events, and maintains dashboards for key performance indicators. This
+        proactive approach allows us to identify negative trends and intervene
+        before issues impact production, significantly reducing downtime and
+        preventing potential losses.
+      </>
+    ),
     businessImpact:
-      'Real-time profit tracking with competitor analysis for production MEV operations',
+      'Automated workflows eliminated manual analysis and prevented production issues',
     metrics: [
-      { label: 'Monitoring', value: 'Real-time', trend: 'up' as const },
-      { label: 'Analysis', value: 'Competitive', trend: 'up' as const },
-      { label: 'Infrastructure', value: 'AWS', trend: 'up' as const },
-      { label: 'Uptime', value: 'High', trend: 'up' as const },
+      { label: 'Daily Events', value: '100K+', trend: 'up' as const },
+      { label: 'Manual Work', value: '90% reduced', trend: 'down' as const },
+      { label: 'Alerts', value: 'Real-time', trend: 'up' as const },
+      { label: 'Uptime', value: '99.9%', trend: 'up' as const },
     ],
     technologies: [
       'Python',
-      'Event Monitoring',
-      'State Reading',
+      'PostgreSQL',
+      'Datadog',
       'AWS',
-      'Node Infrastructure',
-      'Analytics',
+      'Event Processing',
+      'Automated Workflows',
     ],
     liveDemo: '',
     githubUrl: '',
