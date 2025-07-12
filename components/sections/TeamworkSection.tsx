@@ -24,7 +24,7 @@ const teamworkAspects = [
           href="https://www.nethermind.io/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-600 hover:underline"
+          className="text-primary hover:underline"
         >
           Nethermind
         </a>{' '}
@@ -55,13 +55,13 @@ const teamworkAspects = [
 
 export default function TeamworkSection() {
   return (
-    <section id="teamwork" className="py-12 sm:py-16 md:py-20 bg-gray-50">
+    <section id="teamwork" className="py-12 sm:py-16 md:py-20 bg-muted/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             How I Work With Teams
           </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             Beyond technical execution, I believe great blockchain solutions
             emerge from effective collaboration with cross-functional teams and
             stakeholders.
@@ -78,12 +78,12 @@ export default function TeamworkSection() {
               >
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3">
-                    <Icon className="h-6 w-6 text-blue-600" />
+                    <Icon className="h-6 w-6 text-primary" />
                     {aspect.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-gray-600 leading-relaxed">
+                  <div className="text-muted-foreground leading-relaxed">
                     {aspect.description}
                   </div>
                 </CardContent>
