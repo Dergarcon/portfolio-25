@@ -76,6 +76,23 @@ export default function AboutSection() {
                   strategies, always focusing on production reliability and
                   profitability.
                 </p>
+                <p className="text-muted-foreground mt-4">
+                  In recent months, I&apos;ve been extensively exploring AI
+                  coding assistants in my private projects, treating them as
+                  powerful productivity tools that require careful integration.
+                  My approach mirrors working with a junior developer -
+                  delegating well-defined, bounded tasks while maintaining
+                  strict code review practices. I&apos;ve found that AI excels
+                  at accelerating boilerplate generation and pattern
+                  implementation, achieving 30-50% productivity gains without
+                  compromising security or quality. The key is understanding
+                  when NOT to use AI: complex architectural decisions,
+                  security-critical code, or cross-system debugging still
+                  require human expertise. Every line of AI-generated code
+                  undergoes the same rigorous review process as human-written
+                  code, ensuring that increased velocity never comes at the
+                  expense of reliability or security.
+                </p>
               </div>
 
               <div className="p-6 bg-muted/50 rounded-lg">
